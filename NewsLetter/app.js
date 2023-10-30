@@ -42,11 +42,11 @@ app.post("/", function(req,res){
   console.log(firstName, lastName, email);
 
 var jsonData = JSON.stringify(data);
-const url = "https://us21.api.mailchimp.com/3.0/lists/8666bed693";
+const url = "https://us21.api.mailchimp.com/3.0/lists/audience id"; //for eg 9876bed693
 
 const options = {
   method:"POST",
-  auth:"nisha:f22c81b4648fa3c2fcad247f27990e76-us21"
+  auth:"api key" //
 }
 
 const request = https.request(url, options, function(response){
